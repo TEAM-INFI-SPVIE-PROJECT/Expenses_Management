@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>SPVIE Assurance</span>
+  <span class="exemple-spacer"></span>
+  <button  mat-button *ngFor="let item of menu"  routerLink="item-redirect">{{item.nombre}}</button>
+  <span class="exemple-spacer"></span>
+  <button routerLink="Logout" mat-icon-button class="example-icon favorite-icon" aria-label="example icon-button with heart icon">
+        <mat-icon>Logout</mat-icon>
+  </button>
+</mat-toolbar>

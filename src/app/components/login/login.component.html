@@ -1,0 +1,25 @@
+
+<div class="body">
+      <div class="login">
+        <form [formGroup]="form" >
+          <img src="logo.png" alt="">
+          <h1>login</h1>
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label>User</mat-label>
+            <input type="text" matInput autocomplete="off" formControlName="User">
+          </mat-form-field>
+          <mat-form-field class="ancho
+          " appearance="fill">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput autocomplete="off" formControlName="Password">
+          </mat-form-field>
+            <br>
+            <button type="submit" class="ancho button" mat-raised-button color="primary" [disabled]="form.invalid" (click)="Enter()">Enter</button>
+        </form>
+
+      </div>
+
+</div>
+
+
+
