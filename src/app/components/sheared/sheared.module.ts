@@ -37,7 +37,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatSortModule,
     MatCardModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   exports:[
     MatFormFieldModule,

@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'expenses';
+  isSideNavCollapsed = false;
+  screenwidth = 0;
+
+ onToggleSideNav(data: any): void{
+    this.screenwidth = data.screenWidth;
+   this.isSideNavCollapsed = data.collapsed;
+ }
 }

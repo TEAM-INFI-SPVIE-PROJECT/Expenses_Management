@@ -1,8 +1,8 @@
+import { SidenavComponent } from './components/dashboard/sidenav/sidenav.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { ShearedModule } from './components/sheared/sheared.module';
 
@@ -14,17 +14,11 @@ import { ShearedModule } from './components/sheared/sheared.module';
   declarations: [
     AppComponent,
     LoginComponent,
-
-
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    ShearedModule
-
+    ShearedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,22 @@
-import { ReportersComponent } from './reporters/reporters.component';
-import { UserComponent } from './user/user.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { InitialComponent } from './initial/initial.component';
-import { CreateUserComponent } from '../dashbord/user/create-user/create-user.component';
+import { DashboardComponent } from './dashboard.component';
+import { StudentComponent } from './student/student.component';
+import { TeacherComponent } from './teacher/teacher.component';
+import { SupervisorComponent } from './supervisor/supervisor.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+
+
 
 const routes: Routes = [
-  {path:'', component: DashboardComponent, children:[
-    {path:'', component: InitialComponent},
-    {path:'user', component:UserComponent},
-    {path:'reporters',component:ReportersComponent},
-    {path:'create', component:CreateUserComponent},
+  {path:'',component: SidenavComponent,children:[
+  {path:'',component: DashboardComponent },
+  {path:'student',component:StudentComponent},
+  {path:'teacher',component:TeacherComponent},
+  {path:'Supervisor',component:SupervisorComponent},
+  {path:'Statistics',component:StatisticsComponent},
   ]}
 ];
 
